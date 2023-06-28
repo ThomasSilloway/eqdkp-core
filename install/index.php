@@ -46,6 +46,11 @@ include_once($eqdkp_root_path.'core/super_registry.class.php');
 include_once($eqdkp_root_path.'core/registry.class.php');
 include_once($eqdkp_root_path.'core/gen_class.class.php');
 
+include_once($eqdkp_root_path.'castle/castle_logger.php');
+
+castle_log("Included castle logger and it works!");
+
+
 registry::add_const('root_path', $eqdkp_root_path);
 registry::add_const('lite_mode', true);
 // switch to userdefined error-handling
