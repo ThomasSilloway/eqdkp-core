@@ -363,7 +363,7 @@ zend.enable_gc = On
 ; If enabled, scripts may be written in encodings that are incompatible with
 ; the scanner.  CP936, Big5, CP949 and Shift_JIS are the examples of such
 ; encodings.  To use this feature, mbstring extension must be enabled.
-;zend.multibyte = Off
+zend.multibyte = On
 
 ; Allows to set the default encoding for the scripts.  This value will be used
 ; unless "declare(encoding=...)" directive appears at the top of the script.
@@ -766,6 +766,7 @@ user_dir =
 ;extension_dir = "./"
 ; On windows:
 ;extension_dir = "ext"
+extension_dir = "C:\php-8.2.7-nts-Win32-vs16-x64\ext"
 
 ; Directory where the temporary files should be placed.
 ; Defaults to the system default (see sys_get_temp_dir)
@@ -802,7 +803,7 @@ enable_dl = Off
 ; of zero causes PHP to behave as before.  Default is 1.  You should fix your scripts
 ; to use SCRIPT_FILENAME rather than PATH_TRANSLATED.
 ; https://php.net/cgi.fix-pathinfo
-;cgi.fix_pathinfo=1
+cgi.fix_pathinfo=1
 
 ; if cgi.discard_path is enabled, the PHP CGI binary can safely be placed outside
 ; of the web tree and people will not be able to circumvent .htaccess security.
@@ -928,14 +929,14 @@ default_socket_timeout = 60
 ;extension=ffi
 ;extension=ftp
 ;extension=fileinfo
-;extension=gd
+extension=gd
 ;extension=gettext
 ;extension=gmp
 ;extension=intl
 ;extension=imap
-;extension=mbstring
+extension=mbstring
 ;extension=exif      ; Must be after mbstring as it depends on it
-;extension=mysqli
+extension=mysqli
 ;extension=oci8_12c  ; Use with Oracle Database 12c Instant Client
 ;extension=oci8_19  ; Use with Oracle Database 19 Instant Client
 ;extension=odbc
@@ -959,7 +960,7 @@ default_socket_timeout = 60
 ;extension=sqlite3
 ;extension=tidy
 ;extension=xsl
-;extension=zip
+extension=zip
 
 ;zend_extension=opcache
 
