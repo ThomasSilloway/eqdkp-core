@@ -109,3 +109,5 @@ templates/eqdkp_shadowlands
 .vscode
 localitembase_parser.class.php
 signer_localrepo.php
+.idea/
+logs/
